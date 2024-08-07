@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Messenger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loginSection">
+            <h2>Create Username</h2>
+            <input type="text" id="usernameInput" placeholder="Enter username">
+            <button onclick="createUsername()">Create</button>
+        </div>
+        <div id="friendsSection" style="display:none;">
+            <h2>Add Friend</h2>
+            <input type="text" id="friendUsernameInput" placeholder="Enter friend's username">
+            <button onclick="addFriend()">Add</button>
+            <div id="friendsList"></div>
+        </div>
+        <div id="chatSection" style="display:none;">
+            <h2>Chat with <span id="chatWith"></span></h2>
+            <div id="chatBox"></div>
+            <input type="text" id="messageInput" placeholder="Type a message">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
